@@ -1,0 +1,662 @@
+/* CSS Reset: This removes default margins and padding from all elements for consistent styling. */
+* {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Makes padding and border included in element's total width and height */
+}
+
+/* Body Styles: Sets the overall font and background for the entire webpage. */
+body {
+    font-family: 'Arial', sans-serif; /* Sets the font family to Arial */
+    line-height: 1.6; /* Sets line height for better readability */
+    color: #333; /* Sets text color to dark gray */
+    background-color: #fff; /* Sets background color to white */
+}
+
+/* Container: This class centers the content and limits its maximum width. */
+.container {
+    max-width: 1200px; /* Maximum width of 1200px */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 20px; /* Adds 20px padding on left and right */
+}
+
+/* Header Section Styles */
+.header {
+    background-color: #f8bbd9; /* Light pink background color */
+    padding: 1rem 0; /* Adds 1rem padding top and bottom */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow below the header */
+}
+
+.logo {
+    font-size: 1.8rem; /* Sets font size to 1.8 times the default */
+    font-weight: bold; /* Makes the text bold */
+    color: #fff; /* White text color */
+}
+
+.navbar {
+    display: flex; /* Uses Flexbox for layout */
+    justify-content: space-between; /* Spaces items apart */
+    align-items: center; /* Centers items vertically */
+}
+
+.nav-list {
+    list-style: none; /* Removes bullet points from the list */
+    display: flex; /* Uses Flexbox for horizontal layout */
+    gap: 2rem; /* Adds 2rem space between list items */
+}
+
+.nav-link {
+    text-decoration: none; /* Removes underline from links */
+    color: #fff; /* White text color */
+    font-weight: 500; /* Medium font weight */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.nav-link:hover {
+    color: #c8e6c9; /* Changes color to soft green on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(135deg, #f8bbd9 0%, #c8e6c9 100%); /* Gradient background from pink to green */
+    padding: 4rem 0; /* Adds 4rem padding top and bottom */
+    text-align: center; /* Centers the text */
+    color: #fff; /* White text color */
+}
+
+.hero-title {
+    font-size: 3rem; /* Large font size for the main title */
+    margin-bottom: 1rem; /* Adds space below the title */
+}
+
+.hero-tagline {
+    font-size: 1.2rem; /* Slightly larger font for the tagline */
+    margin-bottom: 2rem; /* Adds space below the tagline */
+}
+
+.hero-btn {
+    background-color: #fff; /* White background */
+    color: #f8bbd9; /* Pink text color */
+    padding: 0.8rem 2rem; /* Adds padding inside the button */
+    border-radius: 25px; /* Rounds the corners */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Bold text */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.hero-btn:hover {
+    background-color: #c8e6c9; /* Changes background on hover */
+    color: #fff; /* Changes text color on hover */
+    transform: translateY(-2px); /* Moves button up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+/* Section Title Styles: Used for all main section headings */
+.section-title {
+    font-size: 2.5rem; /* Large font size */
+    text-align: center; /* Centers the text */
+    margin-bottom: 2rem; /* Adds space below */
+    color: #f8bbd9; /* Pink color */
+}
+
+/* Featured Products Section Styles */
+.featured {
+    padding: 4rem 0; /* Adds padding top and bottom */
+    background-color: #f5f5dc; /* Cream background color */
+}
+
+.products-grid {
+    display: grid; /* Uses CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Space between grid items */
+}
+
+.product-card {
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounds the corners */
+    overflow: hidden; /* Hides overflow content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lifts the card on hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+.product-image {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Covers the area without distortion */
+}
+
+.product-name {
+    font-size: 1.5rem; /* Medium font size */
+    margin: 1rem; /* Adds margin */
+    color: #f8bbd9; /* Pink color */
+}
+
+.product-description {
+    margin: 0 1rem; /* Adds horizontal margin */
+    color: #666; /* Gray text color */
+}
+
+.product-price {
+    font-size: 1.2rem; /* Slightly larger font */
+    font-weight: bold; /* Bold text */
+    margin: 1rem; /* Adds margin */
+    color: #c8e6c9; /* Green color */
+}
+
+.product-btn {
+    display: block; /* Makes it a block element */
+    background-color: #f8bbd9; /* Pink background */
+    color: #fff; /* White text */
+    text-align: center; /* Centers text */
+    padding: 0.8rem; /* Adds padding */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth color change */
+}
+
+.product-btn:hover {
+    background-color: #c8e6c9; /* Changes color on hover */
+}
+
+/* Best Sellers Section Styles */
+.best-sellers {
+    padding: 4rem 0; /* Adds padding */
+    background-color: #fff; /* White background */
+}
+
+.bouquets-grid {
+    display: flex; /* Uses Flexbox */
+    flex-wrap: wrap; /* Allows wrapping to next line */
+    justify-content: center; /* Centers items */
+    gap: 2rem; /* Space between items */
+}
+
+.bouquet-card {
+    background-color: #f5f5dc; /* Cream background */
+    border-radius: 10px; /* Rounds corners */
+    overflow: hidden; /* Hides overflow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+    max-width: 300px; /* Maximum width */
+}
+
+.bouquet-card:hover {
+    transform: translateY(-5px); /* Lifts on hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* Darker shadow */
+}
+
+.bouquet-image {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Covers area */
+}
+
+.bouquet-name {
+    font-size: 1.5rem; /* Medium font */
+    margin: 1rem; /* Adds margin */
+    color: #f8bbd9; /* Pink color */
+}
+
+.bouquet-description {
+    margin: 0 1rem; /* Horizontal margin */
+    color: #666; /* Gray text */
+}
+
+.bouquet-price {
+    font-size: 1.2rem; /* Larger font */
+    font-weight: bold; /* Bold */
+    margin: 1rem; /* Margin */
+    color: #c8e6c9; /* Green color */
+}
+
+.bouquet-btn {
+    display: block; /* Block element */
+    background-color: #f8bbd9; /* Pink background */
+    color: #fff; /* White text */
+    text-align: center; /* Centers text */
+    padding: 0.8rem; /* Padding */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.bouquet-btn:hover {
+    background-color: #c8e6c9; /* Color change on hover */
+}
+
+/* About Section Styles */
+.about {
+    padding: 4rem 0; /* Padding */
+    background-color: #c8e6c9; /* Soft green background */
+    text-align: center; /* Centers text */
+}
+
+.about-text {
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Centers horizontally */
+    font-size: 1.1rem; /* Slightly larger font */
+    line-height: 1.8; /* Better line spacing */
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 4rem 0; /* Padding */
+    background-color: #f5f5dc; /* Cream background */
+}
+
+.reviews-grid {
+    display: grid; /* CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Gap between items */
+}
+
+.review-card {
+    background-color: #fff; /* White background */
+    padding: 2rem; /* Padding inside */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+    text-align: center; /* Centers text */
+}
+
+.review-text {
+    font-style: italic; /* Italic text */
+    margin-bottom: 1rem; /* Space below */
+}
+
+.review-author {
+    font-weight: bold; /* Bold text */
+    color: #f8bbd9; /* Pink color */
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 4rem 0; /* Padding */
+    background-color: #fff; /* White background */
+    text-align: center; /* Centers text */
+}
+
+.contact-info p {
+    margin-bottom: 1rem; /* Space between paragraphs */
+    font-size: 1.1rem; /* Larger font */
+}
+
+/* Footer Section Styles */
+.footer {
+    background-color: #f8bbd9; /* Pink background */
+    padding: 2rem 0; /* Padding */
+    text-align: center; /* Centers text */
+    color: #fff; /* White text */
+}
+
+.social-links {
+    margin-bottom: 1rem; /* Space below */
+}
+
+.social-link {
+    text-decoration: none; /* No underline */
+    color: #fff; /* White color */
+    margin: 0 1rem; /* Horizontal margin */
+    font-weight: 500; /* Medium weight */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.social-link:hover {
+    color: #c8e6c9; /* Color change on hover */
+}
+
+.copyright {
+    font-size: 0.9rem; /* Smaller font */
+}
+
+/* General Button Styles */
+.btn {
+    display: inline-block; /* Inline block for sizing */
+    padding: 0.8rem 1.5rem; /* Padding */
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+    transition: all 0.3s ease; /* Smooth transitions */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn:hover {
+    transform: translateY(-2px); /* Lifts slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+}
+
+/* Responsive Design: Styles for smaller screens */
+@media (max-width: 768px) {
+    /* For tablets and smaller */
+    .hero-title {
+        font-size: 2rem; /* Smaller title */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Smaller section titles */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stacks navbar vertically */
+        gap: 1rem; /* Adds gap */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Stacks nav items vertically */
+        gap: 1rem; /* Adds gap */
+    }
+
+    .products-grid,
+    .reviews-grid {
+        grid-template-columns: 1fr; /* Single column grid */
+    }
+
+    .bouquets-grid {
+        flex-direction: column; /* Stacks bouquets vertically */
+        align-items: center; /* Centers items */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile phones */
+    .container {
+        padding: 0 10px; /* Smaller padding */
+    }
+
+    .hero {
+        padding: 2rem 0; /* Smaller padding */
+    }
+
+    .hero-title {
+        font-size: 1.5rem; /* Even smaller title */
+    }
+
+    .section-title {
+        font-size: 1.5rem; /* Even smaller section titles */
+    }
+}
+
+/* Featured Products Section Styles */
+.featured {
+    padding: 4rem 0; /* Adds padding top and bottom */
+    background-color: #f5f5dc; /* Cream background color */
+}
+
+.products-grid {
+    display: grid; /* Uses CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Space between grid items */
+}
+
+.product-card {
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounds the corners */
+    overflow: hidden; /* Hides overflow content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lifts the card on hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+.product-image {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Covers the area without distortion */
+}
+
+.product-name {
+    font-size: 1.5rem; /* Medium font size */
+    margin: 1rem; /* Adds margin */
+    color: #f8bbd9; /* Pink color */
+}
+
+.product-description {
+    margin: 0 1rem; /* Adds horizontal margin */
+    color: #666; /* Gray text color */
+}
+
+.product-price {
+    font-size: 1.2rem; /* Slightly larger font */
+    font-weight: bold; /* Bold text */
+    margin: 1rem; /* Adds margin */
+    color: #c8e6c9; /* Green color */
+}
+
+.product-btn {
+    display: block; /* Makes it a block element */
+    background-color: #f8bbd9; /* Pink background */
+    color: #fff; /* White text */
+    text-align: center; /* Centers text */
+    padding: 0.8rem; /* Adds padding */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth color change */
+}
+
+.product-btn:hover {
+    background-color: #c8e6c9; /* Changes color on hover */
+}
+
+/* Best Sellers Section Styles */
+.best-sellers {
+    padding: 4rem 0; /* Adds padding */
+    background-color: #fff; /* White background */
+}
+
+.bouquets-grid {
+    display: flex; /* Uses Flexbox */
+    flex-wrap: wrap; /* Allows wrapping to next line */
+    justify-content: center; /* Centers items */
+    gap: 2rem; /* Space between items */
+}
+
+.bouquet-card {
+    background-color: #f5f5dc; /* Cream background */
+    border-radius: 10px; /* Rounds corners */
+    overflow: hidden; /* Hides overflow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effects */
+    max-width: 300px; /* Maximum width */
+}
+
+.bouquet-card:hover {
+    transform: translateY(-5px); /* Lifts on hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); /* Darker shadow */
+}
+
+.bouquet-image {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Covers area */
+}
+
+.bouquet-name {
+    font-size: 1.5rem; /* Medium font */
+    margin: 1rem; /* Adds margin */
+    color: #f8bbd9; /* Pink color */
+}
+
+.bouquet-description {
+    margin: 0 1rem; /* Horizontal margin */
+    color: #666; /* Gray text */
+}
+
+.bouquet-price {
+    font-size: 1.2rem; /* Larger font */
+    font-weight: bold; /* Bold */
+    margin: 1rem; /* Margin */
+    color: #c8e6c9; /* Green color */
+}
+
+.bouquet-btn {
+    display: block; /* Block element */
+    background-color: #f8bbd9; /* Pink background */
+    color: #fff; /* White text */
+    text-align: center; /* Centers text */
+    padding: 0.8rem; /* Padding */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.bouquet-btn:hover {
+    background-color: #c8e6c9; /* Color change on hover */
+}
+
+/* About Section Styles */
+.about {
+    padding: 4rem 0; /* Padding */
+    background-color: #c8e6c9; /* Soft green background */
+    text-align: center; /* Centers text */
+}
+
+.about-text {
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Centers horizontally */
+    font-size: 1.1rem; /* Slightly larger font */
+    line-height: 1.8; /* Better line spacing */
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 4rem 0; /* Padding */
+    background-color: #f5f5dc; /* Cream background */
+}
+
+.reviews-grid {
+    display: grid; /* CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2rem; /* Gap between items */
+}
+
+.review-card {
+    background-color: #fff; /* White background */
+    padding: 2rem; /* Padding inside */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow */
+    text-align: center; /* Centers text */
+}
+
+.review-text {
+    font-style: italic; /* Italic text */
+    margin-bottom: 1rem; /* Space below */
+}
+
+.review-author {
+    font-weight: bold; /* Bold text */
+    color: #f8bbd9; /* Pink color */
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 4rem 0; /* Padding */
+    background-color: #fff; /* White background */
+    text-align: center; /* Centers text */
+}
+
+.contact-info p {
+    margin-bottom: 1rem; /* Space between paragraphs */
+    font-size: 1.1rem; /* Larger font */
+}
+
+/* Footer Section Styles */
+.footer {
+    background-color: #f8bbd9; /* Pink background */
+    padding: 2rem 0; /* Padding */
+    text-align: center; /* Centers text */
+    color: #fff; /* White text */
+}
+
+.social-links {
+    margin-bottom: 1rem; /* Space below */
+}
+
+.social-link {
+    text-decoration: none; /* No underline */
+    color: #fff; /* White color */
+    margin: 0 1rem; /* Horizontal margin */
+    font-weight: 500; /* Medium weight */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.social-link:hover {
+    color: #c8e6c9; /* Color change on hover */
+}
+
+.copyright {
+    font-size: 0.9rem; /* Smaller font */
+}
+
+/* General Button Styles */
+.btn {
+    display: inline-block; /* Inline block for sizing */
+    padding: 0.8rem 1.5rem; /* Padding */
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+    transition: all 0.3s ease; /* Smooth transitions */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn:hover {
+    transform: translateY(-2px); /* Lifts slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
+}
+
+/* Responsive Design: Styles for smaller screens */
+@media (max-width: 768px) {
+    /* For tablets and smaller */
+    .hero-title {
+        font-size: 2rem; /* Smaller title */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Smaller section titles */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stacks navbar vertically */
+        gap: 1rem; /* Adds gap */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Stacks nav items vertically */
+        gap: 1rem; /* Adds gap */
+    }
+
+    .products-grid,
+    .reviews-grid {
+        grid-template-columns: 1fr; /* Single column grid */
+    }
+
+    .bouquets-grid {
+        flex-direction: column; /* Stacks bouquets vertically */
+        align-items: center; /* Centers items */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile phones */
+    .container {
+        padding: 0 10px; /* Smaller padding */
+    }
+
+    .hero {
+        padding: 2rem 0; /* Smaller padding */
+    }
+
+    .hero-title {
+        font-size: 1.5rem; /* Even smaller title */
+    }
+
+    .section-title {
+        font-size: 1.5rem; /* Even smaller section titles */
+    }
+}

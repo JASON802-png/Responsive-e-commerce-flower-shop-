@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- This is the document type declaration. It tells the browser this is an HTML5 document. -->
+<html lang="en">
+<!-- The <html> tag is the root element of the HTML page. lang="en" specifies the language as English. -->
+
+<head>
+    <!-- The <head> section contains meta information about the document, not visible on the page. -->
+    <meta charset="UTF-8">
+    <!-- This meta tag sets the character encoding to UTF-8, which supports all characters. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This meta tag makes the website responsive on mobile devices. -->
+    <title>Flower Bliss - Elegant Flower Shop</title>
+    <!-- The <title> tag sets the title shown in the browser tab. -->
+    <link rel="stylesheet" href="style.css">
+    <!-- This links the external CSS file to style the HTML page. -->
+</head>
+
+<body>
+    <!-- The <body> tag contains all the visible content of the webpage. -->
+
+    <!-- Header Section: This is the top part of the website with logo and navigation menu. -->
+    <header class="header">
+        <!-- <header> is a semantic tag for the header section. -->
+        <div class="container">
+            <!-- Container div helps center the content and set max width. -->
+            <div class="logo">Flower Bliss</div>
+            <!-- This div contains the website logo/name. -->
+            <nav class="navbar">
+                <!-- <nav> is a semantic tag for navigation links. -->
+                <ul class="nav-list">
+                    <!-- <ul> creates an unordered list for menu items. -->
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <!-- <li> is a list item, <a> is a link. href="#home" links to the hero section. -->
+                    <li><a href="#shop" class="nav-link">Shop</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section: This is the main banner with welcome message and call-to-action button. -->
+    <section id="home" class="hero">
+        <!-- <section> is a semantic tag for a section. id="home" allows linking to this section. -->
+        <div class="container">
+            <h1 class="hero-title">Welcome to Flower Bliss</h1>
+            <!-- <h1> is the main heading of the page. -->
+            <p class="hero-tagline">Bringing beauty and joy with every bloom</p>
+            <!-- <p> is a paragraph tag for text. -->
+            <a href="#shop" class="btn hero-btn">Shop Now</a>
+            <!-- <a> is a link. class="btn" styles it as a button. -->
+        </div>
+    </section>
+
+    <!-- Featured Products Section: Shows individual flower products in cards. -->
+    <section id="shop" class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Flowers</h2>
+            <!-- <h2> is a subheading. -->
+            <div class="products-grid">
+                <!-- This div uses CSS Grid to layout the product cards. -->
+
+                <!-- Product Card 1: Each card shows flower image, name, description, price, and button. -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/FFB6C1/FFFFFF?text=Rose" alt="Red Rose" class="product-image">
+                    <!-- <img> displays the flower image. alt provides text if image doesn't load. -->
+                    <h3 class="product-name">Red Rose</h3>
+                    <p class="product-description">Classic symbol of love and passion</p>
+                    <p class="product-price">$15.99</p>
+                    <a href="#" class="btn product-btn">Add to Cart</a>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/FFFACD/000000?text=Lily" alt="White Lily" class="product-image">
+                    <h3 class="product-name">White Lily</h3>
+                    <p class="product-description">Elegant and pure white blooms</p>
+                    <p class="product-price">$12.99</p>
+                    <a href="#" class="btn product-btn">Add to Cart</a>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/98FB98/000000?text=Tulip" alt="Pink Tulip" class="product-image">
+                    <h3 class="product-name">Pink Tulip</h3>
+                    <p class="product-description">Springtime beauty in soft pink</p>
+                    <p class="product-price">$10.99</p>
+                    <a href="#" class="btn product-btn">Add to Cart</a>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/E6E6FA/000000?text=Orchid" alt="Purple Orchid" class="product-image">
+                    <h3 class="product-name">Purple Orchid</h3>
+                    <p class="product-description">Exotic and sophisticated flowers</p>
+                    <p class="product-price">$18.99</p>
+                    <a href="#" class="btn product-btn">Add to Cart</a>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/FFE4E1/000000?text=Daisy" alt="White Daisy" class="product-image">
+                    <h3 class="product-name">White Daisy</h3>
+                    <p class="product-description">Simple and cheerful wildflowers</p>
+                    <p class="product-price">$8.99</p>
+                    <a href="#" class="btn product-btn">Add to Cart</a>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200/F0E68C/000000?text=Sunflower" alt="Yellow Sunflower" class="product-image">
+                    <h3 class="product-name">Yellow Sunflower</h3>
+                    <p class="product-description">Bright and sunny field flowers</p>
+                    <p class="product-price">$14.99</p>
+                    <a href="#" class="btn product-btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section: Shows popular bouquets in cards. -->
+    <section class="best-sellers">
+        <div class="container">
+            <h2 class="section-title">Popular Bouquets</h2>
+            <div class="bouquets-grid">
+                <!-- This div uses CSS Flexbox to layout the bouquet cards. -->
+
+                <!-- Bouquet Card 1 -->
+                <div class="bouquet-card">
+                    <img src="https://via.placeholder.com/300x200/FFB6C1/FFFFFF?text=Romance+Bouquet" alt="Romance Bouquet" class="bouquet-image">
+                    <h3 class="bouquet-name">Romance Bouquet</h3>
+                    <p class="bouquet-description">Red roses and baby's breath</p>
+                    <p class="bouquet-price">$35.99</p>
+                    <a href="#" class="btn bouquet-btn">Order Now</a>
+                </div>
+
+                <!-- Bouquet Card 2 -->
+                <div class="bouquet-card">
+                    <img src="https://via.placeholder.com/300x200/98FB98/000000?text=Spring+Bouquet" alt="Spring Bouquet" class="bouquet-image">
+                    <h3 class="bouquet-name">Spring Bouquet</h3>
+                    <p class="bouquet-description">Mixed tulips and daffodils</p>
+                    <p class="bouquet-price">$28.99</p>
+                    <a href="#" class="btn bouquet-btn">Order Now</a>
+                </div>
+
+                <!-- Bouquet Card 3 -->
+                <div class="bouquet-card">
+                    <img src="https://via.placeholder.com/300x200/E6E6FA/000000?text=Elegant+Bouquet" alt="Elegant Bouquet" class="bouquet-image">
+                    <h3 class="bouquet-name">Elegant Bouquet</h3>
+                    <p class="bouquet-description">White lilies and orchids</p>
+                    <p class="bouquet-price">$42.99</p>
+                    <a href="#" class="btn bouquet-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section: Information about the flower shop. -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Flower Bliss</h2>
+            <p class="about-text">At Flower Bliss, we believe in the power of flowers to brighten your day and express your emotions. Our carefully curated selection of fresh, high-quality blooms ensures that every arrangement is a masterpiece. From romantic roses to cheerful sunflowers, we have something for every occasion. Our expert florists are passionate about creating beautiful bouquets that bring joy to your life.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section: Customer reviews and feedback. -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="reviews-grid">
+                <!-- This div uses CSS Grid to layout the review cards. -->
+
+                <!-- Review Card 1 -->
+                <div class="review-card">
+                    <p class="review-text">"The flowers arrived fresh and beautiful. Flower Bliss exceeded my expectations!"</p>
+                    <p class="review-author">- Sarah Johnson</p>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="review-card">
+                    <p class="review-text">"Amazing service and stunning bouquets. Highly recommend for special occasions."</p>
+                    <p class="review-author">- Michael Chen</p>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="review-card">
+                    <p class="review-text">"The quality of flowers is outstanding. My wife loved the arrangement!"</p>
+                    <p class="review-author">- Emily Davis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section: Contact details for the shop. -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-info">
+                <p><strong>Address:</strong> 123 Blossom Street, Flower City, FC 12345</p>
+                <p><strong>Phone:</strong> (555) 123-4567</p>
+                <p><strong>Email:</strong> info@flowerbliss.com</p>
+                <p><strong>Hours:</strong> Monday - Saturday: 9 AM - 6 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section: Bottom of the page with social links and copyright. -->
+    <footer class="footer">
+        <!-- <footer> is a semantic tag for the footer section. -->
+        <div class="container">
+            <div class="social-links">
+                <!-- This div contains links to social media. -->
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+            <p class="copyright">&copy; 2023 Flower Bliss. All rights reserved.</p>
+            <!-- <p> for copyright text. &copy; is the copyright symbol. -->
+        </div>
+    </footer>
+
+</body>
+</html>
